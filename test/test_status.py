@@ -8,4 +8,5 @@ def test_statur_code():
 
 def test_piece_body ():
     response = requests.get('https://belarusbank.by/api/kredits_info', params = {'kredit_type':'потребительский'})
-    assert response.json()['kredit_type'] == 'на недвижимость'
+    assert response.json()['kredit_type'] == 'потребительский'
+    print(response.text)
